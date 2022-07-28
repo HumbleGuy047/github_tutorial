@@ -1,2 +1,2 @@
-# Hashtag is title
+# Main header
 Content
