@@ -78,10 +78,16 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCz7B1l+cfNYfISBvHUe1yGkgYo77xWlWs4iN9aXoEV
 
 $ clip < ~/firstKey.pub -> copy public ssh key to keyboard
 
-# Add ssh key to ssh agent
+# Add ssh key to ssh agent (NOT DONE)
 
 $ eval "$(ssh-agent -s)"    -> start ssh agent in the background
 Agent pid 1273
+
+# Push
+git push origin main
+    + origin 
+    + main: head, older github uses master instead of head
+
 
 
 
