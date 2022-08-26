@@ -4,6 +4,7 @@ Content
 # Dos Commands
 * dir -> list files and directories under the current path
 * cd -> change directory to...
+* clear -> clear 
 
 # Git Commands
 * repo -> repository
@@ -61,3 +62,30 @@ Content
 * git checkout [name of the branch] -> to navigate into the named branch
 * git checkout -d [name of the branch] -> to delete the branch
 * git merge [branch name] -> to merge the branch to current branch in working directory
+
+# Generate SSH Key
+$ ssh-keygen -t rsa -b 4096 -C "marshal.guo0304@outlook.com"
+    + "-t" type
+    + "-b" strength
+    + "-C" email
+
+$ ls | grep firstKey    -> get ssh keys
+firstKey                -> private key, stored on local machine
+firstKey.pub            -> public key
+
+$ cat firstKey.pub      -> show ssh key
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCz7B1l+cfNYfISBvHUe1yGkgYo77xWlWs4iN9aXoEV4gAbb6ttJxH5alaBzPTXuVsADE3zuohM0BIlZNnJgXKe4tdozHgYCl+PIHOpifT1cJMQV+t9kqWy5wgocDGqvbZhdL6zUcRyXglj9t5jdHQAg9kvSzy551Dz9SrQyIGUw/UHce3xGF8Txtitrsx4hRsTJShkn1WalkLnkIyIyvsFplXjYDsTKx+Dn6GGqIojh6ndlTuB1qEB4EKkPb1qoeq1QDR0ibEE1xFDuX9bihiiBUSULMjCetqKu8/6dRZGNSmc3E9qfa+atrPR9ZGevoqZnjEL2mGsXluX59cPZqpjYFHuYIz8NXlOPdjkkRO0gNwhin4kH09W9SPWd4Efvlxz4gzBjAA/WDQnJPxSqqrlFCU2VdGaat96zAmWXWoWAw3nHLMzwpQILieNhHktDZwFtiPgrGGGUHb3jflphEptaDw5yXZK3R7LKhfs7PU/Y1h9yzD61EmwGugi6k9LQLs6WYKW/+Rs9QVj8XTViSnTd1/1AgPFrObFUQIY/u0hVsiUFuacN//KkHNpU5ZREXw5PvrymF7aGqERwycu8/iGx3IpjL95zJWIcZK1jTlcNmCeZ9uQWzjWT0nWGJG6iV4DIsHwKACcO61zT4zAFUBB9iZHJTO2RAQaMnAF8H8QHw== marshal.guo0304@outlook.com
+
+$ clip < ~/firstKey.pub -> copy public ssh key to keyboard
+
+# Add ssh key to ssh agent
+
+$ eval "$(ssh-agent -s)"    -> start ssh agent in the background
+Agent pid 1273
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+The key fingerprint is:
+SHA256:OoOBAjqngAxHS1ljoUJcFjXgchZDoSXKy8TcPEMRKPo marshal.guo0304@outlook.com
+The key's randomart image is:
++---[RSA 4096]----+
+|.o*^%+           |
+|B=@+o..          |
+|BB+O             |
+|Xo=.o            |
+|*=o .   S        |
+|.=E  o .         |
+|.   . +          |
+|       o         |
+|                 |
++----[SHA256]-----+
