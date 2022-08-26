@@ -65,9 +65,9 @@ Content
 
 # Generate SSH Key
 $ ssh-keygen -t rsa -b 4096 -C "marshal.guo0304@outlook.com"
-    + "-t" type
-    + "-b" strength
-    + "-C" email
+    * "-t" type
+    * "-b" strength
+    * "-C" email
 
 $ ls | grep firstKey    -> get ssh keys
 firstKey                -> private key, stored on local machine
@@ -85,8 +85,8 @@ Agent pid 1273
 
 # Push
 git push origin main
-    + origin 
-    + main: head, older github uses master instead of head
+    * origin 
+    * main: head, older github uses master instead of head
 
 
 
