@@ -34,7 +34,7 @@ Content
 * git diff –staged ->differences between the files in the staging area and the latest version present.
 * git diff [first branch] [second branch] ->differences between the two branches mentioned.
 * git reset [file] ->unstages the file, but it preserves the file contents.
-* git reset [commit] ->undoes all the commits after the specified commit and preserves the changes locally.
+* git reset [commit] ->undoes all the commits after the specified commit and preserves the changes locally. git reset HEAD~x, x is number of how many commits further from the last you undo starting from 0, i.e. second last commit will be HEAD~1.
 * git reset –hard [commit] ->discards all history and goes back to the specified commit.
 * git status ->command lists all the files that have to be committed.
 * git rm [file] ->deletes the file from your working directory and stages the deletion.
@@ -65,9 +65,9 @@ Content
 
 # Generate SSH Key
 $ ssh-keygen -t rsa -b 4096 -C "marshal.guo0304@outlook.com"
-    * "-t" type
-    * "-b" strength
-    * "-C" email
+* "-t" type
+* "-b" strength
+* "-C" email
 
 $ ls | grep firstKey    -> get ssh keys
 firstKey                -> private key, stored on local machine
@@ -84,9 +84,13 @@ $ eval "$(ssh-agent -s)"    -> start ssh agent in the background
 Agent pid 1273
 
 # Push
-git push origin main
-    * origin 
-    * main: head, older github uses master instead of head
+>> git push origin main
+ * origin: original repo location (could be remote) 
+ * main: HEAD (older github uses master instead of head)
+
+See if refs/heads/?? is master or main
+>> git show-ref
+
 
 
 
